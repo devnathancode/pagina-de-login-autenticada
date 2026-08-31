@@ -23,8 +23,8 @@ app.use(cors());
 
 app.use(router);
 
+const PORT = 3000;
 
-
-app.listen(3000, () => {
-    console.log('servidor rodando!!!');
-})
+app.listen(PORT, () => {
+    console.log('servidor rodando!!');
+)}
