@@ -69,4 +69,4 @@ function editarUsers(req, res) {
   });
 }
 
-export { verficarJwt, verificarAdm, deleteUser, editarUsers };
+export default { verficarJwt, verificarAdm, deleteUser, editarUsers };
