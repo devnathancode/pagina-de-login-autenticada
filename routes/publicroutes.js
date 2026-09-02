@@ -7,13 +7,14 @@ import validarCadastro from '../middlewares/validacao.js';
 import jwt from 'jsonwebtoken';
 import { Router } from 'express';
 import bcrypt from 'bcrypt'
+import auth from '../middlewares/auth.js';
+
 const {
     verficarJwt,
     verificarAdm,
     deleteUser,
     editarUsers
 } = auth;
-
 const router = Router();
 
 // banco de dados em memoria com array
