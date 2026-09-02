@@ -7,12 +7,12 @@ import validarCadastro from '../middlewares/validacao.js';
 import jwt from 'jsonwebtoken';
 import { Router } from 'express';
 import bcrypt from 'bcrypt'
-import {
+const {
     verficarJwt,
     verificarAdm,
     deleteUser,
     editarUsers
-} from '../middlewares/auth.js';
+} = auth;
 
 const router = Router();
 
